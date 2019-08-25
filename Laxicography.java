@@ -1,4 +1,11 @@
-
+/* *****************************************************************************
+ *  Purpose: Laxicography program (To check the which string is greater)
+ *           How we can compare two strings lexicographically in Java
+ *  @author  Sunny Maurya and Ravi maurya
+ *  @version 1.0
+ *  @since   12-08-2019
+ *
+ ******************************************************************************/
 
 package com.basicProgram.practice;
 
