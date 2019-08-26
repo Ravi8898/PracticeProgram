@@ -3,7 +3,7 @@
  *           How we can compare two strings lexicographically in Java
  *  @author  Sunny Maurya and Ravi maurya
  *  @version 1.0
- *  @since   12-08-2019
+ *  @since   27-08-2019
  *
  ******************************************************************************/
 
@@ -39,29 +39,26 @@ public class Lexicography1 {
 				} else {
 					
 					result = str1.charAt(i) - str2.charAt(i);
-					return getResult(result);
+					if(result>0) {
+						System.out.println("String1 is greater than string2");
+						return 1;
+					}
+					else {
+						System.out.println("String2 is greater than string1");
+						return -1;
+					}
 				}
 			}
 
 			if (str1.length() < str2.length()) {
-				result = (str1.length() - str2.length());
-				return getResult(result);
+				System.out.println("String2 is greater than string1");
+				return -1;
 			} else {
-				result = (str1.length() - str2.length());
-				return getResult(result);
+				System.out.println("String1 is greater than string2");
+				return 1;
 			}
 		}
 	}
 
-	public static int getResult(int result) {
-		if (result > 0) {
-			System.out.println("String1 is greater than string2");
-			return 1;
-		}
-		else {
-			System.out.println("String2 is greater than string1");
-			return -1;
-		}
-
-	}
+	
 }
