@@ -2,7 +2,7 @@
  *  Purpose: Print Damru pattern
  *  
  *  for e.g.
- *     *
+ *    	   *
   	  **
   	 ***
   	*******
